@@ -1,14 +1,14 @@
 <div align = "center">
   <img width="250px" src="https://i.imgur.com/LEVUP0p.png" title="source: imgur.com"/>
   <hr>
-  <h2>
+  <h3>
   <p>Projeto Integrador Generation Brasil - TrECO</p>
   </div>
 
 <hr>
 <br>
 
-## Integrantes
+### Integrantes
 
 - Gabriel Mendes /  www.linkedin.com/in/gabriel-mendes-0706ab1b8
 - Lucas Bernardino /  https://www.linkedin.com/in/lucas-bernardino-de-sousa-b8707a1a2/
@@ -20,7 +20,7 @@
 
 <div align = "center">
   <hr>
-  <h2>Documentação</div>
+  <h3>Documentação</div>
   <hr>
 <div align = "left">
   <p><h3> • Diagrama Entidade Relacionamento
