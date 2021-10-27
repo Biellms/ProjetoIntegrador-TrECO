@@ -10,11 +10,11 @@
 
 ### Integrantes
 
-- Gabriel Mendes |  <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>
-- Lucas Bernardino |  <a href="https://www.linkedin.com/in/lucas-bernardino-de-sousa-b8707a1a2/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>  
-- Deivide Joaquim | <a href="https://www.linkedin.com/in/deivide-joaquim-748175213" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> 
-- Jeffrey Rodrigues | <a href="https://www.linkedin.com/in/jeffreyrodrigues/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>  
-- Milton Viegas | <a href="https://www.linkedin.com/in/milton-viegas-849655b0/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> 
+- Gabriel Mendes |  <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/Biellms" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a> 
+- Lucas Bernardino |  <a href="https://www.linkedin.com/in/lucas-bernardino-de-sousa-b8707a1a2/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/LucasIluminado" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>  
+- Deivide Joaquim | <a href="https://www.linkedin.com/in/deivide-joaquim-748175213" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/Dejsilva" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a> 
+- Jeffrey Rodrigues | <a href="https://www.linkedin.com/in/jeffreyrodrigues/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/JeffreyRodriigues" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a> 
+- Milton Viegas | <a href="https://www.linkedin.com/in/milton-viegas-849655b0/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> |  <a href="https://github.com/Milton-Viegas" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" target="_blank"></a>
 
 <br>
 
