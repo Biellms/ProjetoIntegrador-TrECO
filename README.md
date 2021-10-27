@@ -25,9 +25,9 @@
 <div align = "left">
   <p><h3> • Diagrama Entidade Relacionamento
   <br><br>
-  <img width="1300px" src="https://i.imgur.com/CuYFAjA.jpg"/>
+  <img width="1300px" src="https://i.imgur.com/9LQ8FQX.jpg"/>
   <hr>
   <p><h3> • Dicionário de Dados
   <br><br>
-  <img width="1300px" src="https://i.imgur.com/d1al2wD.jpg"/>
+  <img width="1300px" src="https://i.imgur.com/Ytj5lj0.jpg"/>
 </div>
