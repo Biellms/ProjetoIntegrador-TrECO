@@ -10,11 +10,11 @@
 
 ### Integrantes
 
-- Gabriel Mendes /  www.linkedin.com/in/gabriel-mendes-0706ab1b8
-- Lucas Bernardino /  https://www.linkedin.com/in/lucas-bernardino-de-sousa-b8707a1a2/
-- Deivide Joaquim /  https://www.linkedin.com/in/deivide-joaquim-748175213
-- Jeffrey Rodrigues / https://www.linkedin.com/in/jeffreyrodrigues/
-- Milton Viegas / https://www.linkedin.com/in/milton-viegas-849655b0/
+- Gabriel Mendes |  <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>
+- Lucas Bernardino |  <a href="https://www.linkedin.com/in/lucas-bernardino-de-sousa-b8707a1a2/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>  
+- Deivide Joaquim | <a href="https://www.linkedin.com/in/deivide-joaquim-748175213" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> 
+- Jeffrey Rodrigues | <a href="https://www.linkedin.com/in/jeffreyrodrigues/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a>  
+- Milton Viegas | <a href="https://www.linkedin.com/in/milton-viegas-849655b0/" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" target="_blank"></a> 
 
 <br>
 
