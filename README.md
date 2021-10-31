@@ -12,12 +12,8 @@
 ### • **Introdução**
 TrECO (Trabalho responsavel Ecológico) é um E-Commerce. No objetivo de vender produtos, dentro das comunidades que necessitam de assentamento humano e ações sustentáveis, do qual, apoiaram relações econômicas, sociais e ambientais positivas entre áreas urbanas.
 
-</br>
-
 ### • **Justificativa**
 Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os próprios serviços dentro da mesma, em prol do giro econômico, como vendas de produtos artesanais, coleta seletiva, e até venda de serviços em um futuro. Para tornar os assentamentos humanos inclusivos, seguros, resiliêntes e sustentáveis.
-
-</br>
 
 ### • **ODS Utilizada - Cidades e Comunidades Sustentáveis**
 
