@@ -24,7 +24,8 @@ public class Categoria {
 	@Size(min = 10, max = 1000, message = "O descrição deve conter no mínimo 10 caracteres e no máximo 1000!")
 	private String descricao;
 	
-	@Value("${ativo}")
+	// @Column(columnDefinition = boolean default 'true')
+	@Value("true")
 	private Boolean ativo;
 
 	// Getters and Setters
