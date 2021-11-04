@@ -6,8 +6,6 @@
   </div>
 
 <hr>
-</br>
-
 
 ### • **Introdução**
 TrECO (Trabalho responsavel Ecológico) é um E-Commerce. No objetivo de vender produtos, dentro das comunidades que necessitam de assentamento humano e ações sustentáveis, do qual, apoiaram relações econômicas, sociais e ambientais positivas entre áreas urbanas.
