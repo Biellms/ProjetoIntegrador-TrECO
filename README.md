@@ -15,9 +15,20 @@ TrECO (Trabalho responsavel Ecológico) é um E-Commerce. No objetivo de vender 
 ### • **Justificativa**
 Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os próprios serviços dentro da mesma, em prol do giro econômico, como vendas de produtos artesanais, coleta seletiva, e até venda de serviços em um futuro. Para tornar os assentamentos humanos inclusivos, seguros, resiliêntes e sustentáveis.
 
-### • **ODS Utilizada - Cidades e Comunidades Sustentáveis**
+<h3><b><a href="https://brasil.un.org/pt-br/sdgs/11" target="_blank"><p target="_blank">• ODS Utilizada - Cidades e Comunidades Sustentáveis</a></b></h3>
 
-</br>
+<hr>
+
+### **Linguagens e Ferramentas** 🛠
+
+- <img align="center" alt="Biell-Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"/> Java
+- <img align="center" alt="Biell-Vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Visual Studio Code
+- <img align="center" alt="Biell-Spring" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring Boot
+- <img align="center" alt="Biell-MySql" height="30" width="40" src="https://i.imgur.com/zx4aW9R.png"/> MySQL
+
+- <img align="center" alt="Biell-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git
+
+<hr>
 
 ### **Integrantes**
 
