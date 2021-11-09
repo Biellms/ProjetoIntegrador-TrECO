@@ -1,14 +1,13 @@
 package br.org.generation.treco.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import java.util.*;
+
+import javax.persistence.*;
+import javax.validation.constraints.*;
 
 import org.springframework.beans.factory.annotation.Value;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -21,17 +20,22 @@ public class Categoria {
 	private long id;
 	
 	@NotNull(message = "O atributo Nome da Categoria é obrigatório!")
-	@Size(min = 5, max = 100, message = "O Nome da Categoria deve conter no mínimo 5 caracteres e no máximo 100!")
+	@Size(max = 255, message = "O Nome da Categoria deve conter no mínimo 5 caracteres e no máximo 100!")
 	private String nomeCategoria;
 	
 	@NotNull(message = "O atributo descrição é obrigatório!")
-	@Size(min = 10, max = 1000, message = "O descrição deve conter no mínimo 10 caracteres e no máximo 1000!")
+	@Size(min = 5, max = 1000, message = "O descrição deve conter no mínimo 10 caracteres e no máximo 1000!")
 	private String descricao;
 	
 	// @Column(columnDefinition = boolean default 'true')
 	@Value("true")
 	private Boolean ativo;
 
+	// Uma categoria para muitos produtos
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL) // cascade = Qualquer alteração propaga para todas os relacionamentos.
+	@JsonIgnoreProperties("categoria") // Evita o efeito cascata no banco de dados
+	private List<Produto> produto;
+	
 	// Getters and Setters
 	public long getId() { return id; }
 
@@ -48,5 +52,9 @@ public class Categoria {
 	public Boolean getAtivo() { return ativo; } 
 
 	public void setAtivo(Boolean ativo) { this.ativo = ativo; }
+
+	public List<Produto> getProduto() { return produto; }
+
+	public void setProduto(List<Produto> produto) { this.produto = produto; }
 
 }

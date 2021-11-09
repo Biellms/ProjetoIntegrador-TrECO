@@ -13,6 +13,7 @@ import br.org.generation.treco.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	
+	//SELECT * FROM tb_produto WHERE nomeProduto LIKE "%?%";
 	public List <Produto> findAllByNomeProdutoContainingIgnoreCase(String nomeProduto);
 	
 	public List <Produto> findByNomeProdutoAndImagem(String nomeProduto, String imagem);

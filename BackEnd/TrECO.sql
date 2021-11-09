@@ -1,6 +1,6 @@
 
-CREATE DATABASE db_projeto;
-USE db_projeto;
+CREATE DATABASE db_treco;
+USE db_treco;
 
 -- Tabela produto
 CREATE TABLE Produto (
@@ -36,5 +36,9 @@ CREATE TABLE Usuario (
 ALTER TABLE Produto ADD CONSTRAINT Produto_fk0 FOREIGN KEY (usuario_id) REFERENCES Usuario(id);
 ALTER TABLE Produto ADD CONSTRAINT Produto_fk1 FOREIGN KEY (categoria_id) REFERENCES Categoria(id);
 
+-- Selects
+SELECT * FROM tb_categoria;
+SELECT * FROM tb_produto;
+SELECT * FROM tb_usuario;
 
-
+DROP DATABASE db_treco;
