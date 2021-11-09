@@ -53,8 +53,8 @@ public class UsuarioController {
 		return usuarioRepository.findById(usuario.getId())
 		.map(resposta ->  ResponseEntity.ok(usuarioRepository.save(usuario)))
 		.orElse(ResponseEntity.notFound().build());	
+	}
 	
-}
 	@DeleteMapping({"/{id}"})
 	public ResponseEntity <?> delete(@PathVariable long id) {
 		   return usuarioRepository.findById(id)
@@ -62,8 +62,7 @@ public class UsuarioController {
 		        	   usuarioRepository.deleteById(id);
 		             return ResponseEntity.ok().build();
 		           	}).orElse(ResponseEntity.notFound().build());
-	
-}
+	}
 	
 }
 

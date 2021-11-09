@@ -47,6 +47,21 @@ public class ProdutoController {
 		return ResponseEntity.ok(produtoRepository.findAllByNomeProdutoContainingIgnoreCase(nomeProduto));
 	}
 	
+	@GetMapping("/preco_inicial/{inicio}/preco_final/{fim}")
+	public ResponseEntity<List<Produto>> getByPrecoEntre(@PathVariable BigDecimal inicio, @PathVariable BigDecimal fim){
+		return ResponseEntity.ok(produtoRepository.buscarProdutoEntre(inicio, fim));
+	}
+	
+	@GetMapping("/preco_maior/{preco}")
+	public ResponseEntity<List<Produto>> getByPrecoMaior(@PathVariable BigDecimal preco ){
+		return ResponseEntity.ok(produtoRepository.findByPrecoGreaterThanOrderByPreco(preco));
+	}
+	
+	@GetMapping("/preco_menor/{preco}")
+	public ResponseEntity<List<Produto>> getByPrecoMenor(@PathVariable BigDecimal preco){
+		return ResponseEntity.ok(produtoRepository.findByPrecoLessThanOrderByPrecoDesc(preco));
+	}
+	
 	@PostMapping 
 	public ResponseEntity<Produto> postProduto(@RequestBody Produto nomeProduto){ 
 		return ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(nomeProduto));
@@ -73,6 +88,7 @@ public class ProdutoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
+	/*
 	@GetMapping("/nomeProduto/{nomeProduto}/ouimagem/{imagem}")
 	public ResponseEntity<List<Produto>> getByNomeProdutoOuImagem(@PathVariable String nomeProduto, @PathVariable String imagem){
 		return ResponseEntity.ok(produtoRepository.findByNomeProdutoOrImagem(nomeProduto, imagem));
@@ -82,10 +98,6 @@ public class ProdutoController {
 	public ResponseEntity<List<Produto>> getByNomeProdutoEImagem(@PathVariable String nomeProduto, @PathVariable String imagem){
 		return ResponseEntity.ok(produtoRepository.findByNomeProdutoAndImagem(nomeProduto, imagem));
 	}
+	*/
 	
-	@GetMapping("/preco_inicial/{inicio}/preco_final/{fim}")
-	public ResponseEntity<List<Produto>> getByPrecoEntre(@PathVariable BigDecimal inicio, @PathVariable BigDecimal fim){
-		return ResponseEntity.ok(produtoRepository.buscarProdutoEntre(inicio, fim));
-	}
-
 }
