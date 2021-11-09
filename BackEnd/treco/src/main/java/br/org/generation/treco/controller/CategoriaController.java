@@ -19,7 +19,7 @@ import br.org.generation.treco.model.Categoria;
 import br.org.generation.treco.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping("/categoria") // Tudo que vier com o endereço /postagens, ela vai executar
+@RequestMapping("/categorias") // Tudo que vier com o endereço /postagens, ela vai executar
 @CrossOrigin(origins = "*", allowedHeaders = "*") //Relação com frontend - Liberar requisições de qualquer origem, ou origem específica
 public class CategoriaController {
 	
@@ -40,8 +40,8 @@ public class CategoriaController {
 	}
 	
 	@GetMapping("/categoria/{categoria}") // indica que é categoria, e depois o parâmetro
-	public ResponseEntity<List<Categoria>> getByTitulo(@PathVariable String titulo){ 
-		return ResponseEntity.ok(categoriaRepository.findAllByNomeCategoriaContainingIgnoreCase(titulo));	
+	public ResponseEntity<List<Categoria>> getByCategoria(@PathVariable String categoria){ 
+		return ResponseEntity.ok(categoriaRepository.findAllByNomeCategoriaContainingIgnoreCase(categoria));	
 	}
 	
 	@PostMapping

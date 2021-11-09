@@ -22,7 +22,7 @@ import br.org.generation.treco.model.Produto;
 import br.org.generation.treco.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping("/produto")
+@RequestMapping("/produtos")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 
 public class ProdutoController {
@@ -42,9 +42,9 @@ public class ProdutoController {
 			.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@GetMapping("/nomeProduto/{nomeProduto}")
-	public ResponseEntity<List<Produto>> getByTitulo(@PathVariable String nomeProduto){
-		return ResponseEntity.ok(produtoRepository.findAllByNomeProdutoContainingIgnoreCase(nomeProduto));
+	@GetMapping("/produto/{produto}")
+	public ResponseEntity<List<Produto>> getByProduto(@PathVariable String produto){
+		return ResponseEntity.ok(produtoRepository.findAllByNomeProdutoContainingIgnoreCase(produto));
 	}
 	
 	@GetMapping("/preco_inicial/{inicio}/preco_final/{fim}")
@@ -63,16 +63,16 @@ public class ProdutoController {
 	}
 	
 	@PostMapping 
-	public ResponseEntity<Produto> postProduto(@RequestBody Produto nomeProduto){ 
-		return ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(nomeProduto));
+	public ResponseEntity<Produto> postProduto(@RequestBody Produto produto){ 
+		return ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(produto));
 	}
 	
 	@PutMapping
-	public ResponseEntity<Produto> putProduto(@Valid @RequestBody Produto nomeProduto) {
+	public ResponseEntity<Produto> putProduto(@Valid @RequestBody Produto produto) {
 					
-		return produtoRepository.findById(nomeProduto.getId())
+		return produtoRepository.findById(produto.getId())
 				.map(resposta -> {
-					return ResponseEntity.ok().body(produtoRepository.save(nomeProduto));
+					return ResponseEntity.ok().body(produtoRepository.save(produto));
 				})
 				.orElse(ResponseEntity.notFound().build());
 	}

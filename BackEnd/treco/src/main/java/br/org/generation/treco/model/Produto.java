@@ -24,13 +24,11 @@ public class Produto {
 	@Size(min = 5, max = 255, message = "A descrição deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String descricao;
 	
-	@JsonFormat(shape = JsonFormat.Shape.STRING)
+	@JsonFormat(shape = JsonFormat.Shape.STRING) // Formatar Preço
 	@NotNull(message = "O atributo preço é obrigatório!")
 	@Digits(integer=6, fraction=2, message = "O decimal deve conter 6 inteiros e 2 fracionados")
 	private BigDecimal preco;
 	
-	@NotNull(message = "O atributo imagem é obrigatório!")
-	@Size(min = 10, max = 255, message = "O link da imagem deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String imagem;
 	
 	@ManyToOne // Muitos produtos para uma categoria

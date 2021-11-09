@@ -11,6 +11,6 @@ import br.org.generation.treco.model.Categoria;
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 	
 	// SELECT * FROM tb_postagens WHERE nomeCategoria LIKE "%?%";
-	public List <Categoria> findAllByNomeCategoriaContainingIgnoreCase(String nomeCategoria);
+	public List <Categoria> findAllByNomeCategoriaContainingIgnoreCase(String categoria);
 	
 }
