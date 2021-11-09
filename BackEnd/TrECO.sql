@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 CREATE TABLE Produto(
+=======
+
+CREATE DATABASE db_treco;
+USE db_treco;
+
+-- Tabela produto
+CREATE TABLE Produto (
+>>>>>>> main
 	id bigint NOT NULL AUTO_INCREMENT,
 	nomeProduto varchar(255) NOT NULL,
 	descricao varchar(255) NOT NULL,
@@ -51,5 +60,9 @@ ALTER TABLE Produto ADD CONSTRAINT Produto_fk0 FOREIGN KEY (categoria_id) REFERE
 ALTER TABLE Produto ADD CONSTRAINT Produto_fk1 FOREIGN KEY (usuario_id) REFERENCES Usuario(id);
 
 
+-- Selects
+SELECT * FROM tb_categoria;
+SELECT * FROM tb_produto;
+SELECT * FROM tb_usuario;
 
-
+DROP DATABASE db_treco;
