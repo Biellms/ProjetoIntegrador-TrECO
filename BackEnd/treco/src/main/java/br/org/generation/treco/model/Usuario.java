@@ -48,5 +48,9 @@ public class Usuario {
 	public String getSenha() { return senha; }
 
 	public void setSenha(String senha) { this.senha = senha; }
+
+	public List<Produto> getProduto() { return produto; }
+
+	public void setProduto(List<Produto> produto) { this.produto = produto; }
 	
 }
