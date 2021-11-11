@@ -23,7 +23,7 @@ Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os
 
 - <img align="center" alt="Biell-Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"/> Java
 - <img align="center" alt="Biell-Vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Visual Studio Code
-- <img align="center" alt="Biell-Spring" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring Boot
+- <img align="center" alt="Biell-Spring" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring Framework
 - <img align="center" alt="Biell-MySql" height="30" width="40" src="https://i.imgur.com/zx4aW9R.png"/> MySQL
 
 - <img align="center" alt="Biell-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git
