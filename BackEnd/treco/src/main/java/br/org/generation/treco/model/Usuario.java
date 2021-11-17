@@ -18,8 +18,9 @@ public class Usuario {
 	
 	@NotNull(message = "O atributo Nome Completo é obrigatório!")
 	@Size(min = 10, max = 255, message = "O Nome da completo deve conter no mínimo 10 caracteres e no máximo 255!")
-	private String nomeCompleto;
+	private String nome;
 	
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	@NotNull(message = "O atributo usuário é obrigatório!")
 	@Size(max = 255, message = "O usuário deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String usuario;
@@ -37,9 +38,9 @@ public class Usuario {
 
 	public void setId(long id) { this.id = id; }
 
-	public String getNomeCompleto() { return nomeCompleto; }
+	public String getNome() { return nome; }
 
-	public void setNomeCompleto(String nomeCompleto) { this.nomeCompleto = nomeCompleto; }
+	public void setNome(String nome) { this.nome = nome; }
 
 	public String getUsuario() { return usuario; }
 

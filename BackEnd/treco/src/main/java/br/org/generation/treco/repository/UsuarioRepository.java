@@ -9,13 +9,11 @@ import org.springframework.stereotype.Repository;
 import br.org.generation.treco.model.Usuario;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
-	
-	// SELECT * FROM tb_categoria WHERE nomeCompleto LIKE '%?%';
-	public List<Usuario> findAllByNomeCompletoContainingIgnoreCase(String nome);
-	
-	// SELECT * FROM tb_categoria WHERE usuario LIKE '%?%';
-	public List<Usuario> findAllByUsuarioContainingIgnoreCase(String usuario);
-	
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+
+	// SELECT * FROM tb_usuario WHERE usuario LIKE '%?%';
 	public Optional<Usuario> findByUsuario(String usuario);
+	
+	public List<Usuario> findAllByNomeContainingIgnoreCase(String nome);
 }
+
