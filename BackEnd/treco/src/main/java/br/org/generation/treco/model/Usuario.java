@@ -7,6 +7,8 @@ import javax.validation.constraints.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "tb_usuario") // Dizer o nome da tabela
 public class Usuario {
@@ -20,9 +22,10 @@ public class Usuario {
 	@Size(min = 10, max = 255, message = "O Nome da completo deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String nome;
 	
+	@ApiModelProperty(example = "email@email.com.br")
 	@Email(message = "O atributo Usuário deve ser um email válido!")
-	@NotNull(message = "O atributo usuário é obrigatório!")
-	@Size(max = 255, message = "O usuário deve conter no mínimo 10 caracteres e no máximo 255!")
+	@NotNull(message = "O atributo Usuário é obrigatório!")
+	@Size(max = 255, message = "O Usuário deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String usuario;
 	
 	@NotNull(message = "O atributo senha é obrigatório!")
