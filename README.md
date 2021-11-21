@@ -19,14 +19,17 @@ Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os
 
 <hr>
 
-### **Linguagens e Ferramentas** 🛠
+### **Linguagens e Ferramentas Utilizadas** 🛠
 
-- <img align="center" alt="Biell-Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"/> Java
-- <img align="center" alt="Biell-Vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Visual Studio Code
-- <img align="center" alt="Biell-Spring" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring Framework
-- <img align="center" alt="Biell-MySql" height="30" width="40" src="https://i.imgur.com/zx4aW9R.png"/> MySQL
+- <img align="center" alt="Biell-Java" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"/> Java
+- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/> HTML5
+- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/> CSS3
+- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/> JavaScript
+- <img align="center" alt="Biell-Spring" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring
+- <img align="center" alt="Biell-MySQL" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"/> MySQL 
+- <img align="center" alt="Biell-Vscode" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Visual Studio Code
 
-- <img align="center" alt="Biell-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git
+- <img align="center" alt="Biell-Git" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git
 
 <hr>
 
@@ -47,9 +50,9 @@ Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os
 <div align = "left">
   <p><h3> • Diagrama Entidade Relacionamento
   <br><br>
-  <img width="1300px" src="https://i.imgur.com/9LQ8FQX.jpg"/>
+  <img width="1250px" src="https://i.imgur.com/9LQ8FQX.jpg"/>
   <hr>
   <p><h3> • Dicionário de Dados
   <br><br>
-  <img width="1300px" src="https://i.imgur.com/Ytj5lj0.jpg"/>
+  <img width="1250px" src="https://i.imgur.com/Ytj5lj0.jpg"/>
 </div>
