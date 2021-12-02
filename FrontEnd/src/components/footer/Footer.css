@@ -1,0 +1,47 @@
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.footer-container {
+    background-color: #bcdabc;
+}
+
+.titulo-footer {
+    font-family: Arial black !important;
+    color: rgb(66, 39, 39);
+    font-size: 20px;
+}
+
+.titulo2-footer {
+    font-family: Arial black !important;
+    color: rgb(66, 39, 39);
+    font-size: 15px;
+}
+
+.texto-footer {
+    font-family: Arial black;
+    color: rgb(66, 39, 39);
+    font-size: 15px;
+}
+
+.texto-footer-link {
+    font-family: Arial black;
+    color: rgb(66, 39, 39);
+    font-size: 15px;
+}
+
+.texto-footer-link:hover {
+    color: rgb(128, 104, 104);
+    transition: 0.3s ease-out;
+}
+
+.texto-footer a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(66, 39, 39);
+}
+
+.texto-footer a:hover{
+    color: rgb(128, 104, 104);
+    transition: 0.3s ease-out;
+}
