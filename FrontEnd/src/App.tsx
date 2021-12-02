@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+
 import Footer from './components/footer/Footer';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Cadastro from './paginas/cadastro/Cadastro';
 import './App.css';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
     <Router>
 
-        <Navbar />
+        <NavBar />
 
           <Switch>
             <div style={{minHeight: '100vh'}}>

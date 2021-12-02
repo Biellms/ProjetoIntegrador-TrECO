@@ -17,6 +17,7 @@
  
  .text-decorator-none{
      text-decoration: none;
+     color: black;
  }
 
 .buttom{
@@ -27,4 +28,15 @@
 
 .font{
     font-size: 15px !important;
+}
+
+.login-link-cadastro {
+    color: #659841;
+    font-size: 15px !important;
+    font-family: Arial black !important;
+}
+
+.login-link-cadastro:hover {
+    color: #add883;
+    transition: 0.3s ease-out;
 }

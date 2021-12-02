@@ -28,8 +28,8 @@ function Login() {
                         <Box marginRight={1} display='flex' justifyContent='center'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='font'>Não tem uma conta?</Typography>
                         </Box >
-                        <Link to='/cadastrousuario'>
-                        <Typography variant='subtitle1' gutterBottom align='center' className='font'>Cadastre-se</Typography>
+                        <Link to='/cadastro' className='text-decorator-none'>
+                        <Typography variant='subtitle1' gutterBottom align='center' className='login-link-cadastro'>Cadastre-se</Typography>
                         </Link>                           
                     </Box>
                 </Box>
