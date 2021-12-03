@@ -1,0 +1,637 @@
+{
+	"info": {
+		"_postman_id": "613447b0-ba92-4d22-b817-1bec0efa15b9",
+		"name": "TrECO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Categoria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/categoria/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								"categoria",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Categoria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeCategoria\" : \"Cachaça\",\r\n    \"descricao\" : \"Teor alcoolico de 50%\",\r\n    \"ativo\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nomeCategoria\" : \"Refrigerante\",\r\n    \"descricao\" : \"Gássss\",\r\n    \"ativo\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/categorias/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categorias",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/2",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Nome Produto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/produto/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"produto",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Preço Between",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/preco_inicial/3/preco_final/60",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"preco_inicial",
+								"3",
+								"preco_final",
+								"60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Preço > ?",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/preco_maior/3",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"preco_maior",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Preco < ?",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/preco_menor/11",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"preco_menor",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeProduto\" : \"Adubo de planta\",\r\n    \"descricao\" : \"Adubo para incrementar o crescimento da planta\",\r\n    \"preco\" : 10,\r\n    \"imagem\" : \"ulr: hauahuahuahua\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 2,\r\n    \"nomeProduto\" : \"Canudo Reciclavel\",\r\n    \"descricao\" : \"Reciclagem de plastico\",\r\n    \"preco\" : 3.5,\r\n    \"imagem\" : \"ulr: sfrfqaahllk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/2",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Get By All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic SmVmZnJleTEyM0BnbWFpbC5jb206MTIzNDU3OA==",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/usuarios/all",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"usuarios",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Usuario Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \" Rodrigues\",\r\n    \"usuario\": \"Jeffrey123@gmail.com\",\r\n    \"senha\": \"1234578\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/usuarios/cadastrar",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Usuario Logar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"Jeffrey123@gmail.com\",\r\n    \"senha\": \"1234578\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/usuarios/logar",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"usuarios",
+								"logar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic SmVmZnJleTEyM0BnbWFpbC5jb206MTIzNDU3OA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nome\" : \"Jeffrey Rodrigues\",\r\n    \"usuario\" : \"Jeffrey@gmail.com\",\r\n    \"senha\" : \"Jeffrey123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/usuarios/atualizar",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"usuarios",
+								"atualizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relacionamento: Produto - Categoria/Usuario",
+			"item": [
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeProduto\" : \"Adubo de planta\",\r\n    \"descricao\" : \"Adubo para incrementar o crescimento da planta\",\r\n    \"preco\" : 10,\r\n    \"imagem\" : \"ulr: hauahuahuahua\",\r\n    \"categoria\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW5AZW1haWwuY29tLmJyOmFkbWluMTIz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 4,\r\n    \"nomeProduto\" : \"Canudo de refri\",\r\n    \"descricao\" : \"Reciclagem de plastico\",\r\n    \"preco\" : 4.98,\r\n    \"imagem\" : \"ulr: sfrfqaahllk\",\r\n    \"categoria\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://trecostore.herokuapp.com/produtos/",
+							"protocol": "https",
+							"host": [
+								"trecostore",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"produtos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+.text-decorator-none {
+    text-decoration: none;
+  }
+  
+  .appbar {
+    background-color: #dce8dc;
+    height: 2cm;
+    justify-content: space-around;
+    box-shadow:  0 0 15px rgb(128, 127, 127);
+  }
+  
+  .pointer {
+    cursor: pointer;
+    color: black;
+    margin-right: 300px;
+  }
+  
+  .txtmenu {
+    font-family: Arial black;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .txtmenu:hover {
+    color: rgb(105, 104, 104);
+    transition: 0.3s ease-out;
+  }

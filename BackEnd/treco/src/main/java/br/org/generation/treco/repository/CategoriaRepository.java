@@ -10,6 +10,7 @@ import br.org.generation.treco.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 	
-	public List <Categoria> findAllByNomeCategoriaContainingIgnoreCase(String nomeCategoria);
-	// SELECT * FROM tb_postagens WHERE titulo LIKE "%titulo%";
+	// SELECT * FROM tb_postagens WHERE nomeCategoria LIKE "%?%";
+	public List <Categoria> findAllByNomeCategoriaContainingIgnoreCase(String categoria);
+	
 }
