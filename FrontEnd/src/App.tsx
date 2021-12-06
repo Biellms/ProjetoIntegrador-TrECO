@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Footer from './components/footer/Footer';
+import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Cadastro from './paginas/cadastro/Cadastro';
 import './App.css';
-import NavBar from './components/navbar/NavBar';
+import NavBar from './components/estaticos/navbar/NavBar';
 
 function App() {
   return (
