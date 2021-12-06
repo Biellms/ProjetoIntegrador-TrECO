@@ -1,42 +1,48 @@
-
-.textos1{
-    font-size: 28px !important;
-    color: #629D27 !important;
-    font-weight: bold !important;
-    padding: 15px;
-}
- 
- .imagem{
-     background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
-     background-repeat: no-repeat;
-     width: 100vh;
-     min-height: 100vh;
-     background-size: cover;
-     background-position: center;
- }
- 
- .text-decorator-none{
-     text-decoration: none;
-     color: black;
- }
-
-.buttom{
-    color: white !important;
-    background: rgb(119,169,109);
-    background: linear-gradient(90deg, rgba(119,169,109,1) 0%, rgba(94,145,46,1) 100%);
+.textos1 {
+  font-size: 30px !important;
+  color: #629d27 !important;
+  font-weight: bold !important;
+  padding: 15px;
+  font-family: Segoe UI !important;
 }
 
-.font{
-    font-size: 15px !important;
+.imagem {
+  background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+  background-repeat: no-repeat;
+  width: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-decorator-none {
+  text-decoration: none;
+  color: black;
+}
+
+.buttom {
+  color: white !important;
+  background: rgb(119, 169, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 169, 109, 1) 0%,
+    rgba(94, 145, 46, 1) 100%
+  );
+}
+
+.font {
+  font-size: 15px !important;
+  font-family: Segoe UI !important;
 }
 
 .login-link-cadastro {
-    color: #659841;
-    font-size: 15px !important;
-    font-family: Arial black !important;
+  color: #659841;
+  font-size: 15px !important;
+  font-family: Segoe UI;
+  font-weight: bold !important;
 }
 
 .login-link-cadastro:hover {
-    color: #add883;
-    transition: 0.3s ease-out;
+  color: #add883;
+  transition: 0.3s ease-out;
 }

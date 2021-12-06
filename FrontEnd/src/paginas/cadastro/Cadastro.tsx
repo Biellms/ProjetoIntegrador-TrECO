@@ -53,7 +53,7 @@ function Cadastro() {
     return (
         <Grid justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={12}>
-                <Box paddingX={80} margin={8}>
+                <Box paddingX={50} margin={6}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h2' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Criar Nova Conta</Typography>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome'
@@ -62,7 +62,7 @@ function Cadastro() {
                             margin='normal' fullWidth />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' type='password'
                             margin='normal' fullWidth />
-                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarsenha' label='Confirmar Senha' variant='outlined' 
+                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarsenha' label='Confirmar Senha' variant='outlined'
                             type='password' name='confirmarsenha' margin='normal' fullWidth />
                         <Box>
                             <h1 className='font'>
@@ -76,7 +76,7 @@ function Cadastro() {
                             </Button>
                         </Box>
                     </form>
-                    <Box display='flex' justifyContent='center' marginTop={5}>
+                    <Box display='flex' justifyContent='center' marginTop={1}>
                         <Box marginRight={1} display='flex' justifyContent='center'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='font'>Ou faça Login com:</Typography>
                         </Box >
