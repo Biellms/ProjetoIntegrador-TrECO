@@ -57,17 +57,17 @@ function Footer() {
                             <Box className="titulo-footer" borderBottom={1}>
                                 Conta
                             </Box>
-                            <Box marginTop={1}>
-                                <Link to='/login' className='text-decorator-none'>
-                                    <Box className="texto-footer-link">
+                            <Box marginTop={1} >
+                                <Box>
+                                    <Link to='/login' className='text-decorator-none'>
                                         Logar
-                                    </Box>
-                                </Link>
-                                <Link to='/cadastro' className='text-decorator-none'>
-                                <Box className="texto-footer-link">
-                                        Cadastrar
+                                    </Link>
                                 </Box>
-                                </Link>
+                                <Box>
+                                    <Link to='/cadastro' className='text-decorator-none'>
+                                        Cadastrar
+                                    </Link>
+                                </Box>
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12}>

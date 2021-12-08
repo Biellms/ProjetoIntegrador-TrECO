@@ -1,5 +1,13 @@
 .text-decorator-none {
   text-decoration: none;
+  font-family: Segoe UI;
+  color: rgba(0, 0, 0, 0.911);
+  font-size: 13px;
+}
+
+.text-decorator-none:hover {
+  color: rgb(105, 104, 104);
+  transition: 0.3s ease-out;
 }
 
 .footer-container {
@@ -28,17 +36,6 @@
 }
 
 .texto-footer a:hover {
-  color: rgb(105, 104, 104);
-  transition: 0.3s ease-out;
-}
-
-.texto-footer-link {
-  font-family: Segoe UI;
-  color: black;
-  font-size: 13px;
-}
-
-.texto-footer-link:hover {
   color: rgb(105, 104, 104);
   transition: 0.3s ease-out;
 }
