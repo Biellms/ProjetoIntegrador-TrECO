@@ -1,22 +1,67 @@
-body {
-  background-color: #bde3cb;
+.caixa {
+  background-image: url(https://i.imgur.com/Qm6Dlvm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 
-.caixa {
-    background-color: #bde3cb;
-  }
-  
-  .titulo {
-    color: black !important;
-    font-weight: bold !important;
-  }
-  
-  .botao {
-    border-color: black !important;
-    background-color: #dcddd9 !important;
-    color: black !important;
-  }
-  
-  .postagens {
-    background-color: white;
-  }
+.caixa2 {
+  background-color: white;
+  box-shadow: 0 0 20px rgb(17, 49, 1);
+}
+
+.titulo {
+  color: black !important;
+  font-weight: bold !important;
+  font-family: Segoe UI !important;
+}
+
+.titulo2 {
+  color: black !important;
+  font-weight: bold !important;
+  margin-right: 80px !important;
+  margin-left: 60px !important;
+  font-family: Segoe UI !important;
+  font-size: 23px !important;
+  text-align: start !important;
+}
+
+.botao {
+  border-color: black !important;
+  background-color: #dcddd9 !important;
+  color: black !important;
+  font-family: Segoe UI;
+}
+
+.botao2 {
+  border-color: black !important;
+  background-color: #dcddd9 !important;
+  color: black !important;
+  font-family: Segoe UI;
+  margin-right: 180px !important;
+  margin-left: 70px !important;
+}
+
+.postagens {
+  background-color: white;
+}
+
+p {
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: start;
+}
+
+.texto2 {
+  font-family: Segoe UI;
+  font-size: 15px;
+  font-weight: normal;
+  margin-right: 80px !important;
+  margin-left: 60px !important;
+  text-align: start;
+}
+
+.imagem2 {
+  margin-left: 80px;
+}
