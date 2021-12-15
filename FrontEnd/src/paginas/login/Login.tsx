@@ -5,6 +5,7 @@ import './Login.css';
 import useLocalStorage from 'react-use-localstorage';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../service/Service';
+import { toast } from 'react-toastify';
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
@@ -63,11 +64,30 @@ function Login() {
         e.preventDefault();
 
         try {
-            await login('usuarios/logar', userLogin, setToken)
-        } catch (error) {
-            alert('Dados do usuário inconsistentes. Erro ao logar!')
+            await login('/usuarios/logar', userLogin, setToken)
+            toast.success('Usuário logado com sucesso!', {
+              position: 'top-center',
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: 'colored',
+              progress: undefined,
+            });
+          } catch (error) {
+            toast.error('Dados inconsistentes. Favor verificar as informações de login!', {
+              position: 'top-center',
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: 'colored',
+              progress: undefined,
+            });
+          }
         }
-    }
 
     return (
         <Grid justifyContent='center' alignItems='center'>
