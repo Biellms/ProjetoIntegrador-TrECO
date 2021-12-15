@@ -16,15 +16,15 @@
 }
 
 .txtmenu {
-  font-family: Segoe UI;
-  color: black;
-  text-decoration: none;
-  list-style: none;
+  font-family: Segoe UI !important;
+  color: black !important;
+  text-decoration: none !important;
+  list-style: none !important;
 }
 
 .txtmenu:hover {
-  color: rgb(105, 104, 104);
-  transition: 0.3s ease-out;
+  color: rgb(105, 104, 104) !important;
+  transition: 0.3s ease-out !important;
 }
 
 a {

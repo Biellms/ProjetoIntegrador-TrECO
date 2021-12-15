@@ -2,15 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaCategoria.css';
-import useLocalStorage from 'react-use-localstorage';
 import Categoria from '../../../models/Categoria';
 import { busca } from '../../../service/Service';
 import { toast } from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaCategoria() {
+    
     const [categorias, setCategorias] = useState<Categoria[]>([])
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
 
     useEffect(() => {
         if (token == "") {
@@ -39,8 +43,6 @@ function ListaCategoria() {
     useEffect(() => {
         getCategoria()
     }, [categorias.length])
-
-
 
     return (
         <>

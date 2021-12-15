@@ -3,7 +3,6 @@ interface Categoria{
     nomeCategoria: string;
     Boolean?: true | null;
     descricao: string
-
 }
 
 export default Categoria;
