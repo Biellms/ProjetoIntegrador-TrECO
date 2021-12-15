@@ -1,26 +1,38 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Cadastro from './paginas/cadastro/Cadastro';
 import './App.css';
 import NavBar from './components/estaticos/navbar/NavBar';
+import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
+import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CadastroProduto from './components/produtos/cadastroProduto/CadastroProduto';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import ListaProduto from './components/produtos/listaProduto/ListaProduto';
+import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
 
 function App() {
   return (
-    <Router>
 
-        <NavBar />
+    <Provider store={store}>
+      <ToastContainer />
+        <Router>
+
+          <NavBar />
 
           <Switch>
-            <div style={{minHeight: '100vh'}}>
-            <Route exact path="/">
-              <Login />
+            <div style={{ minHeight: '100vh' }}>
+              <Route exact path="/">
+                <Login />
               </Route>
 
-            <Route path="/login">
+              <Route path="/login">
                 <Login />
               </Route>
 
@@ -31,12 +43,46 @@ function App() {
               <Route path="/home">
                 <Home />
               </Route>
+
+              <Route path="/categorias">
+                <ListaCategoria />
+              </Route>
+
+              <Route exact path='/formularioCategoria'>
+                <CadastroCategoria />
+              </Route>
+
+              <Route exact path='/formularioCategoria/:id'>
+                <CadastroCategoria />
+              </Route>
+
+              <Route path="/deletarCategoria/:id">
+                <DeletarCategoria />
+              </Route>
+              
+              <Route path="/produtos">
+                <ListaProduto />
+              </Route>
+
+              <Route exact path="/formularioProduto">
+                <CadastroProduto />
+              </Route>
+
+              <Route exact path="/formularioProduto/:id">
+                <CadastroProduto />
+              </Route>
+
+              <Route path="/deletarProduto/:id">
+                <DeletarProduto />
+              </Route>
+              
             </div>
           </Switch>
 
-        <Footer />
+          <Footer />
 
-      </Router>
+        </Router>
+    </Provider>
   );
 }
 
