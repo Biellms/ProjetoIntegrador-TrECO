@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Typography, Box, Grid, Button } from '@material-ui/core';
 import './Home.css';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import ModalProduto from '../../components/produtos/modalProduto/ModalProduto';
 
 function Home() {
 
@@ -15,31 +16,29 @@ function Home() {
 
     useEffect(() => {
         if (token == "") {
-          toast.error('Usuário precisa estar logado!', {
-            position: 'top-center',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: 'colored',
-            progress: undefined,
-          });
-          history.push("/login")
+            toast.error('Usuário precisa estar logado!', {
+                position: 'top-center',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
+            history.push("/login")
         }
-      }, [token])
+    }, [token])
 
     return (
         <>
             <Grid container direction="row" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={12} >
+                    <Box paddingX={12}>
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Somos a Treco!</Typography>
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center">
-                            <p>
-                                Bem vindos ao Ecommerce mais sustentável e descolado que você já viu!
-                                Onde, além de comprar, você também poderá vender seus produtos.
-                            </p>
+                            Bem vindos ao Ecommerce mais sustentável e descolado que você já viu!
+                            Onde, além de comprar, você também poderá vender seus produtos ecológios!
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
@@ -52,33 +51,39 @@ function Home() {
 
 
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa2'>
-                <Grid item xs={5} >
-                    <img src="https://i.imgur.com/xJwojLF.png" alt="" width="500px" height="500px" className='imagem2' />
+                <Grid item xs={6} >
+                    <Box display="flex" justifyContent='center'>
+                        <Box>
+                            <img src="https://i.imgur.com/xJwojLF.png" alt="" width="700vw" height="700vh" className='imagem2' />
+                        </Box>
+                    </Box>
                 </Grid>
-                <Grid item xs={7}>
-                    <Box paddingX={2} >
-
-                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo2'>
+                <Grid item xs={6}>
+                    <Box paddingX={12} >
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
                             Compre e venda produtos que não agridem o meio ambiente, e tenha uma nova renda, além de contribuir com o planeta.
                         </Typography>
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center">
-                            <p className='texto2'>
-                                A TrECO (Trabalho Reponsável Ecológico) é uma plataforma de
-                                e-commerce com o objetivo de vender produtos entre a
-                                comunidade, criados pelos próprios moradores, se tornando um
-                                ecossistema, e apoianda nas relações econômicas, sociais e
-                                ambientais nas comunidades de forma extremamente positiva.
-
-                            </p>
+                            A TrECO (Trabalho Reponsável Ecológico) é uma plataforma de
+                            e-commerce com o objetivo de vender produtos entre a
+                            comunidade, criados pelos próprios moradores, se tornando um
+                            ecossistema, e apoianda nas relações econômicas, sociais e
+                            ambientais nas comunidades de forma extremamente positiva.
                         </Typography>
                     </Box>
-                    <Box display="flex">
-                        <Box marginRight={1}>
+                    <Box display="flex" justifyContent='center' marginTop={3}>
+                        <Box mx={2}>
+                            <ModalProduto />
                         </Box>
-                        <Button variant="outlined" className='botao2'>Cadastre-se</Button>
+                        <Box mx={2}>
+                            <Link to='/produtos' className='text-decorator-none'>
+                                <Button variant="outlined" className="botao">
+                                    Ver Produtos
+                                </Button>
+                            </Link>
+                        </Box>
                     </Box>
                 </Grid>
-
             </Grid>
         </>
     );
