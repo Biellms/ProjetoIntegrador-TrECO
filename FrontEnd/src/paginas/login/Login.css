@@ -1,33 +1,66 @@
-.textos1 {
-  font-size: 30px !important;
-  color: #629d27 !important;
-  font-weight: bold !important;
-  padding: 15px;
-  font-family: Segoe UI !important;
-}
-
-.imagem {
-  background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+.container-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/FundoTreco.png");
   background-repeat: no-repeat;
-  width: 100vh;
-  min-height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-.text-decorator-none {
-  text-decoration: none;
-  color: black;
+.paperStyle-login{
+  padding: 22px;
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  height: 52vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px !important;
 }
 
-.buttom {
+.img{
+  width: 180px;
+  height: 180px;
+  margin-top: -35px;
+}
+
+.box-login {
+  margin-top: -15px;
+}
+
+.loginText{
+  font-weight: bold !important;
+  color: #629D27;
+}
+
+.btn{
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+
+.button{
+  height: 32px;
   color: white !important;
-  background: rgb(119, 169, 109);
+  font-weight: bold !important;
   background: linear-gradient(
     90deg,
     rgba(119, 169, 109, 1) 0%,
     rgba(94, 145, 46, 1) 100%
   );
+}
+
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(82, 144, 68) 0%,
+    rgb(88, 116, 61) 100%
+  );
+  transition: 0.3s ease-out !important;
 }
 
 .font {
@@ -40,14 +73,17 @@
   font-size: 15px !important;
   font-family: Segoe UI;
   font-weight: bold !important;
+  text-decoration: none;
+  margin-left: 3px;
 }
 
 .login-link-cadastro:hover {
-  color: #add883;
-  transition: 0.3s ease-out;
+  color: #add883 !important;
+  transition: 0.3s ease-out !important;
 }
 
-/* Estilizar o AutoFill */
+/* Estilização de Auto Fill*/
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,

@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { Grid, Box, Typography, TextField, Button, styled } from '@material-ui/core';
+import { Grid, Box, Typography, TextField, Button, styled, Paper } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
 import UserLogin from '../../models/UserLogin';
@@ -61,7 +61,7 @@ function Login() {
             dispatch(addToken(token))
             history.push('/home')
         }
-      }, [token])
+    }, [token])
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -93,35 +93,34 @@ function Login() {
     }
 
     return (
-        <Grid justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={12}>
-                <Box justifyContent='center' display='flex'>
-                    <Box width={'50%'} margin={13}>
-                        <form onSubmit={onSubmit}>
-                            <Typography variant='h2' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Login</Typography>
-                            <CssTextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                            <CssTextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                            <Box marginTop={3} textAlign='center'>
-                                <Button type='submit' className='buttom' fullWidth>
-                                    Login
-                                </Button>
-                            </Box>
-                        </form>
-                        <Box display='flex' justifyContent='center' marginTop={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='font' >Esqueceu a senha?</Typography>
-                        </Box>
-                        <Box display='flex' justifyContent='center' marginTop={5}>
-                            <Box marginRight={1} display='flex' justifyContent='center'>
-                                <Typography variant='subtitle1' gutterBottom align='center' className='font'>Não tem uma conta?</Typography>
-                            </Box >
-                            <Link to='/cadastro' className='text-decorator-none'>
-                                <Typography variant='subtitle1' gutterBottom align='center' className='login-link-cadastro'>Cadastre-se</Typography>
-                            </Link>
-                        </Box>
-                    </Box>
+        <Box className='container-login'>
+            <Paper elevation={15} className='paperStyle-login'>
+                <form onSubmit={onSubmit}>
+                <Box>
+                    <img src="https://i.imgur.com/Hch416C.png" alt="logo" className='img' />
                 </Box>
-            </Grid>
-        </Grid>
+                <Box className='box-login'>
+                <Typography variant='h5' align='center' className='loginText'>
+                    Login
+                </Typography>
+                <CssTextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                <CssTextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                </Box>
+                <Box className='btn'>
+                    <Button type='submit' fullWidth variant="contained" className="button">
+                        Login
+                    </Button>
+                </Box>
+                </form>
+                <Box>
+                    <Typography variant='subtitle1' gutterBottom align='center' className='font'>Não tem uma conta?
+                        <Link to='/cadastro' className='login-link-cadastro'>
+                            Cadastre-se
+                        </Link>
+                    </Typography>
+                </Box>
+            </Paper>
+        </Box>
     );
 }
 
