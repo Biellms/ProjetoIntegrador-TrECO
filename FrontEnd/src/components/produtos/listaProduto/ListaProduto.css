@@ -1,3 +1,30 @@
 .text-decorator-none {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
+
+.container2 {
+  display: flex;
+  grid-gap: 30px;
+  background-color: none;
+  margin-bottom: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tamanho{
+  width: 300px;
+  margin: 30px;
+}
+
+.container-produto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  margin-bottom: 2cm;
+  padding: 10px;
+  margin-left: 25vh;
+  margin-right: 25vh;
+}

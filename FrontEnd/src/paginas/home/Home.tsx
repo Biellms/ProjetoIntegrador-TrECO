@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import ModalProduto from '../../components/produtos/modalProduto/ModalProduto';
+import ListaProduto from '../../components/produtos/listaProduto/ListaProduto';
 
 function Home() {
 
