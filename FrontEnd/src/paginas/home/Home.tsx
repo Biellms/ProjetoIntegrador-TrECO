@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import ModalProduto from '../../components/produtos/modalProduto/ModalProduto';
-import ListaProduto from '../../components/produtos/listaProduto/ListaProduto';
 
 function Home() {
 
@@ -43,9 +42,9 @@ function Home() {
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                        </Box>
-                        <Button variant="outlined" className='botao'>Saiba Mais</Button>
+                        <Link to='/sobre' className='text-decorator-none'>
+                            <Button variant="outlined" className='botao'>Saiba Mais</Button>
+                        </Link>
                     </Box>
                 </Grid>
             </Grid>
