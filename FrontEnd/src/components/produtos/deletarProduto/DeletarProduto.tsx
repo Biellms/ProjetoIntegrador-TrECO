@@ -48,7 +48,7 @@ function DeletarProduto() {
     }
 
     function sim() {
-        history.push('/categorias')
+        history.push('/produtos')
         deleteId(`/produtos/${id}`, {
             headers: {
                 'Authorization': token
@@ -67,7 +67,7 @@ function DeletarProduto() {
     }
 
     function nao() {
-        history.push('/categorias')
+        history.push('/produtos')
     }
 
     return (

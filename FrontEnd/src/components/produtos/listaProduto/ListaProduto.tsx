@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Produto from '../../../models/Produto';
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import './ListaProduto.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
@@ -49,53 +49,57 @@ function ListaProduto() {
 
   return (
     <>
-      {
-        produto.map(post => (
-          <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Produtos
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  {post.imagem}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.nomeProduto}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.descricao}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.preco}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.categoria?.descricao}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
+      <Grid className='container-produto'>
+        {
+          produto.map(post => (
+            <Box className='container2'>
+              <Card className="tamanho">
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="250"
+                    image={post.imagem}
+                    alt="Escova"
+                  />
+                  <CardContent>
+                    <Typography variant="body2" component="p">
+                      Nome: {post.nomeProduto}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      Descrição: {post.descricao}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      Preço: R${post.preco}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      Categoria: {post.categoria?.descricao}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardContent>
+                  <Box display="flex" justifyContent="center" mb={1.5}>
 
-                  <Link to={`/formularioProduto/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                        atualizar
-                      </Button>
-                    </Box>
-                  </Link>
-                  <Link to={`/deletarProduto/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
-                        deletar
-                      </Button>
-                    </Box>
-                  </Link>
-                </Box>
-              </CardActions>
-            </Card>
-          </Box>
-        ))
-      }
+                    <Link to={`/formularioProduto/${post.id}`} className="text-decorator-none" >
+                      <Box mx={1}>
+                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                          atualizar
+                        </Button>
+                      </Box>
+                    </Link>
+                    <Link to={`/deletarProduto/${post.id}`} className="text-decorator-none">
+                      <Box mx={1}>
+                        <Button variant="contained" size='small' color="secondary">
+                          deletar
+                        </Button>
+                      </Box>
+                    </Link>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box >
+          ))
+        }
+      </Grid>
     </>
   )
 }

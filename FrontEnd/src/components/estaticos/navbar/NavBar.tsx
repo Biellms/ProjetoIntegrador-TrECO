@@ -37,9 +37,7 @@ function NavBar() {
       <Toolbar variant="dense" className='appbar'>
         <Link to='/home'>
           <Box className='pointer' >
-            <Typography variant="h5" color="inherit">
               <img src="https://i.imgur.com/Hch416C.png" alt="" width="" height="200px" />
-            </Typography>
           </Box>
         </Link>
         <Box display="flex" justifyContent="start">
