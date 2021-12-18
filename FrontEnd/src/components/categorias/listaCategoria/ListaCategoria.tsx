@@ -47,11 +47,11 @@ function ListaCategoria() {
 
     return (
         <>
-        <Grid className='container-produto'>
+        <Grid className='container-categoria'>
             {
                 categorias.map(categoria => (
-                    <Box className='container2'>
-                        <Card className="tamanho">
+                    <Box className='box-categoria'>
+                        <Card className="tamanho-categoria">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
                                     {categoria.nomeCategoria}
