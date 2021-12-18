@@ -1,3 +1,32 @@
+.container-cadastro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/FundoTreco.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.paperStyle-cadastro {
+  padding: 22px;
+  margin: 35vw;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px !important;
+}
+
+.img-cadastro{
+  width: 180px;
+  height: 180px;
+  margin-top: -45px;
+}
+
 .box-cadastro {
   margin-top: -25px;
 }
@@ -20,36 +49,6 @@
     rgb(88, 116, 61) 100%
   );
   transition: 0.3s ease-out !important;
-}
-
-.img-cadastro{
-  width: 180px;
-  height: 180px;
-  margin-top: -45px;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../img/FundoTreco.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.paperStyle{
-  padding: 22px;
-  text-align: center;
-  width: 20%;
-  height: 65vh;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px !important;
 }
 
 .box-info {

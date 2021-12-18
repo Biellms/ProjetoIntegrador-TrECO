@@ -98,8 +98,8 @@ function Cadastro() {
     }
 
     return (
-        <Box className='container'>
-            <Paper elevation={15} className='paperStyle'>
+        <Box className='container-cadastro'>
+            <Paper elevation={15} className='paperStyle-cadastro'>
                 <form onSubmit={onSubmit}>
                     <Box>
                         <img src="https://i.imgur.com/Hch416C.png" alt="logo" className='img-cadastro' />
