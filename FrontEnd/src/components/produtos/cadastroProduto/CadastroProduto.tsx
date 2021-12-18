@@ -40,6 +40,7 @@ function CadastroProduto() {
             id: 0,
             nomeCategoria: '',
             descricao: '',
+            imagem: '',
             Boolean: null
         })
 

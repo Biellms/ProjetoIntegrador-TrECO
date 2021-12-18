@@ -18,6 +18,7 @@ function CadastroCategoria() {
         id: 0,
         nomeCategoria: '',
         descricao: '',
+        imagem: '',
         Boolean: true
 
     })
