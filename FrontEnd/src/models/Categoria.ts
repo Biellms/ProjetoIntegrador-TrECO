@@ -2,8 +2,7 @@ interface Categoria{
     id: number;
     nomeCategoria: string;
     Boolean?: true | null;
-    descricao: string;
-    imagem: string
+    descricao: string
 }
 
 export default Categoria;

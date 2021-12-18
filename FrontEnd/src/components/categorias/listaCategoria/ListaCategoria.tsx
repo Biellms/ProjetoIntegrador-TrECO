@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { Box, Card, CardActions, CardContent, CardActionArea, CardMedia, Button, Typography, Grid } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaCategoria.css';
 import Categoria from '../../../models/Categoria';
 import { busca } from '../../../service/Service';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { Grid } from '@mui/material';
 
 function ListaCategoria() {
     
@@ -46,17 +47,11 @@ function ListaCategoria() {
 
     return (
         <>
-            <Grid className='container-categoria'>
+        <Grid className='container-produto'>
             {
                 categorias.map(categoria => (
-                    <Box className='container3'>
-                        <Card className="tamanho3">
-                        <CardMedia
-                    component="img"
-                    height="250"
-                    image={categoria.imagem}
-                    alt="Categoria"
-                  />
+                    <Box className='container2'>
+                        <Card className="tamanho">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
                                     {categoria.nomeCategoria}
@@ -65,7 +60,7 @@ function ListaCategoria() {
                                     {categoria.descricao}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
+                            <CardContent>
                                 <Box display="flex" justifyContent="center" mb={1.5} >
 
                                     <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
@@ -75,6 +70,7 @@ function ListaCategoria() {
                                             </Button>
                                         </Box>
                                     </Link>
+
                                     <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
@@ -82,8 +78,9 @@ function ListaCategoria() {
                                             </Button>
                                         </Box>
                                     </Link>
+
                                 </Box>
-                            </CardActions>
+                            </CardContent>
                         </Card>
                     </Box>
                 ))
