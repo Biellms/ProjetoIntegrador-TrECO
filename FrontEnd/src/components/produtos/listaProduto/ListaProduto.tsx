@@ -73,7 +73,7 @@ function ListaProduto() {
                     </Typography>
                     </Box>
                     <Typography variant="body2" component="p" className='texto-categoria-produto'>
-                      Categoria: {post.categoria?.descricao}
+                      Categoria: {post.categoria?.nomeCategoria}
                     </Typography>
                   </CardContent>
                 </CardActionArea>

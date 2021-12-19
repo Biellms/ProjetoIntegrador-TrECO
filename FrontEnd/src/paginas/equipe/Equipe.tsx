@@ -19,7 +19,7 @@ export default function Equipe() {
                     <CardMedia
                         component="img"
                         height="200px"
-                        image="https://i.imgur.com/GtT81Yu.png"
+                        image="https://i.imgur.com/qS1Mn8z.jpg"
                         alt="deivide"
                     />
                     <CardContent>
@@ -27,7 +27,7 @@ export default function Equipe() {
                             Deivide Joaquim
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="texto-card">
-                            Sou Deivide Joaquim biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru
+                            Prazer, tenho 27 anos e sou de Guarulhos/SP. Eu amo tecnologia e meu hooby preferido é estar com a minha familia.
                         </Typography>
                     </CardContent>
 
@@ -57,7 +57,7 @@ export default function Equipe() {
                             Jeffrey Rodrigues
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="texto-card">
-                            Sou Jeffrey Rodrigues biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru
+                            Prazer, tenho 29 anos. Sou entusiasta da tecnologia, amo viajar, superar desafios e jogar videogame nas horas vagas.
                         </Typography>
                     </CardContent>
 
@@ -87,7 +87,7 @@ export default function Equipe() {
                             Gabriel Mendes
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="texto-card">
-                            Sou Gabriel Mendes biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru
+                            Eaee, tenho 19 anos sou de São Paulo/SP. Sou uma pessoa muito persistente e apaixonado por Tecnologia da Informação.
                         </Typography>
                     </CardContent>
 
@@ -117,7 +117,7 @@ export default function Equipe() {
                             Lucas Bernardino
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="texto-card">
-                            Sou Lucas Bernardino biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru
+                             Olá prazer, tenho 19 anos e moro em São Paulo/SP. E sou apaixonado pelo universo.
                         </Typography>
                     </CardContent>
 
@@ -147,7 +147,7 @@ export default function Equipe() {
                             Milton Viegas
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="texto-card">
-                            Sou Milton Viegas biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru biruliru
+                            Africano bacana de 30 anos. Autodidata, extremamente curioso e viajante.
                         </Typography>
                     </CardContent>
 

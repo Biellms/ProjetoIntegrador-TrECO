@@ -104,7 +104,7 @@ function Home() {
                             </a>
                         </Box>
                         <Box mx={1}>
-                            <a href='https://instagram.com/trecopi?utm_medium=copy_link' target='_blank' className='text-decorator-none'>
+                            <a href='https://br.pinterest.com/alojatreco/' target='_blank' className='text-decorator-none'>
                                 <PinterestIcon className='pint'/>
                             </a>
                         </Box>

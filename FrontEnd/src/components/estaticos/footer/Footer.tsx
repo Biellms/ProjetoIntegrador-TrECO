@@ -29,7 +29,7 @@ function Footer() {
                                     </a>
                                 </Box>
                                 <Box className="texto-footer">
-                                    <a href="https://br.pinterest.com" color="inherit" target="_blank" rel="noreferrer">
+                                    <a href="https://br.pinterest.com/alojatreco/" color="inherit" target="_blank" rel="noreferrer">
                                         Pinterest
                                     </a>
                                 </Box>

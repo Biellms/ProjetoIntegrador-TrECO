@@ -187,7 +187,7 @@ function CadastroProduto() {
                                         })}>
                                         {
                                             categorias.map(categoria => (
-                                                <MenuItem value={categoria.id}>{categoria.descricao}</MenuItem>
+                                                <MenuItem value={categoria.id}>{categoria.nomeCategoria}</MenuItem>
                                             ))
                                         }
                                     </Select>
