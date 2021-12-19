@@ -6,6 +6,9 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import ModalProduto from '../../components/produtos/modalProduto/ModalProduto';
+import Equipe from '../equipe/Equipe';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 function Home() {
 
@@ -35,8 +38,8 @@ function Home() {
             <Grid container direction="row" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={12}>
-                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Somos a Treco!</Typography>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center">
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Somos a TrECO!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center">
                             Bem vindos ao Ecommerce mais sustentável e descolado que você já viu!
                             Onde, além de comprar, você também poderá vender seus produtos ecológios!
                         </Typography>
@@ -63,7 +66,7 @@ function Home() {
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
                             Compre e venda produtos que não agridem o meio ambiente, e tenha uma nova renda, além de contribuir com o planeta.
                         </Typography>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center">
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center">
                             A TrECO (Trabalho Reponsável Ecológico) é uma plataforma de
                             e-commerce com o objetivo de vender produtos entre a
                             comunidade, criados pelos próprios moradores, se tornando um
@@ -85,6 +88,30 @@ function Home() {
                     </Box>
                 </Grid>
             </Grid>
+
+            <Grid container direction="row" alignItems="center" className='caixa3'>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={12}>
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Venha nos conhecer!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center">
+                            Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os próprios serviços dentro da mesma, em prol do giro econômico, como vendas de produtos artesanais, coleta seletiva, e até venda de serviços em um futuro. Para tornar os assentamentos humanos inclusivos, seguros, resiliêntes e sustentáveis.
+                        </Typography>
+                    </Box>
+                    <Box display="flex" justifyContent='center' marginTop={3}>
+                        <Box mx={1}>
+                            <a href='https://instagram.com/trecopi?utm_medium=copy_link' target='_blank' className='text-decorator-none'>
+                                <InstagramIcon className='insta'/>
+                            </a>
+                        </Box>
+                        <Box mx={1}>
+                            <a href='https://instagram.com/trecopi?utm_medium=copy_link' target='_blank' className='text-decorator-none'>
+                                <PinterestIcon className='pint'/>
+                            </a>
+                        </Box>
+                    </Box>
+                </Grid>
+            </Grid>
+            <Equipe />
         </>
     );
 }

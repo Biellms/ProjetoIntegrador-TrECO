@@ -37,7 +37,7 @@ function Sobre() {
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h3" className='quemSomos'>SOBRE</Typography>
                     </Grid>
                     <Grid alignItems="center" item xs={12} className='center'>
-                        <p className='text'>
+                        <p className='text-sobre'>
                             A Treco (Trabalho Responsável Ecológico) é uma plataforma de E-commerce desenvolvida utilizando como base a ODS 11 <b>Cidades e Comunidades Sustentáveis</b> com o objetivo de vender produtos entre a comunidade, criados pelos próprios moradores, se tornando um ecossistema, e apoiando nas relações econômicas, sociais e ambientais nas comunidades de forma extremamente positiva.
                             O principal objetivo da Treco é possibilitar a compra e venda de produtos que não agridem o meio ambiente, e com isso possa gerar novas rendas dentro de determinadas comunidades, permitindo assim a contribuição com o Planeta.
                             Temos também como objetivo, influenciar a reciclagem, permitindo ambientes urbanos mais limpos e seguros para os próprios moradores, e num futuro podermos criar parcerias com empresas de reciclagem, para que a comunidade possa fazer a troca por pontos dentro do nosso ecommerce, e com isso todos possam fazer compras de nossos produtos com os "TrecoPoints".

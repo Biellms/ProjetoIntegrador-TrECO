@@ -18,7 +18,7 @@ function Footer() {
             <Box className="footer-container">
                 <Container maxWidth='lg'>
                     <Grid container spacing={7}>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} sm={4}>
                             <Box className="titulo-footer" borderBottom={1}>
                                 Contato
                             </Box>
@@ -29,36 +29,58 @@ function Footer() {
                                     </a>
                                 </Box>
                                 <Box className="texto-footer">
-                                    <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8/" color="inherit" target="_blank" rel="noreferrer">
-                                        LinkedIn
+                                    <a href="https://br.pinterest.com" color="inherit" target="_blank" rel="noreferrer">
+                                        Pinterest
                                     </a>
                                 </Box>
                                 <Box className="texto-footer">
-                                    <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8/" color="inherit" target="_blank" rel="noreferrer">
+                                    <a href="https://instagram.com/trecopi?utm_medium=copy_link" color="inherit" target="_blank" rel="noreferrer">
                                         Instagram
                                     </a>
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} sm={4}>
                             <Box className="titulo-footer" borderBottom={1}>
                                 Suporte
                             </Box>
                             <Box marginTop={1}>
                                 <Box className="texto-footer">
-                                    <a href="https://github.com/Biellms" color="inherit" target="_blank" rel="noreferrer">
-                                        Quem Somos
-                                    </a>
+                                    <Link to='/sobre' className='text-decorator-none'>
+                                        Sobre
+                                    </Link>
                                 </Box>
                                 <Box className="texto-footer">
-                                    <a href="https://github.com/Biellms" color="inherit" target="_blank" rel="noreferrer">
+                                    <Link to='/equipe' className='text-decorator-none'>
+                                        Equipe
+                                    </Link>
+                                </Box>
+                                <Box className="texto-footer">
+                                    <Link to='/equipe' className='text-decorator-none'>
                                         Fale Conosco
-                                    </a>
+                                    </Link>
+                                </Box>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
+                            <Box className="titulo-footer" borderBottom={1}>
+                                Informações
+                            </Box>
+                            <Box marginTop={1}>
+                                <Box className="texto-footer">
+                                    <Link to='/home' className='text-decorator-none'>
+                                        Home
+                                    </Link>
                                 </Box>
                                 <Box className="texto-footer">
-                                    <a href="https://github.com/Biellms" color="inherit" target="_blank" rel="noreferrer">
-                                        Nossa Equipe
-                                    </a>
+                                    <Link to='/produtos' className='text-decorator-none'>
+                                        Produtos
+                                    </Link>
+                                </Box>
+                                <Box className="texto-footer">
+                                    <Link to='/categorias' className='text-decorator-none'>
+                                        Categorias
+                                    </Link>
                                 </Box>
                             </Box>
                         </Grid>
@@ -70,7 +92,7 @@ function Footer() {
                     </Grid>
                 </Container>
             </Box>
-        </footer>
+        </footer >
     }
 
     return (

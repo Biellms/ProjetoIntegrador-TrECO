@@ -6,7 +6,16 @@
 }
 
 .caixa2 {
-  background-color: white;
+  background-image: url(../../img/planodefundo2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.caixa3 {
+  background-image: url(../../img/recyclable.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -40,4 +49,24 @@ p {
 
 .imagem2 {
   margin-left: 80px;
+}
+
+.insta {
+  font-size: 60px !important;
+  color: rgb(207, 24, 137);
+}
+
+.insta:hover {
+  color: rgb(105, 17, 72) !important;
+  transition: 250ms ease-out !important;
+}
+
+.pint {
+  font-size: 60px !important;
+  color: rgb(207, 22, 22);
+}
+
+.pint:hover {
+  color: rgb(107, 15, 15) !important;
+  transition: 250ms ease-out !important;
 }
