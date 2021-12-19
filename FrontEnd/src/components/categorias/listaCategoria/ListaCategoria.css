@@ -1,26 +1,23 @@
 .box-categoria {
-    display: flex;
-    grid-gap: 30px;
-    background-color: none;
-    margin-bottom: 5px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .tamanho-categoria {
-    width: 300px;
-    margin: 30px;
-  }
-  
-  .container-categoria {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-gap: 20px;
-    margin-bottom: 2cm;
-    padding: 10px;
-    margin-left: 25vh;
-    margin-right: 25vh;
-  }
+  display: flex;
+  grid-gap: 30px;
+  margin-bottom: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tamanho-categoria {
+  width: 300px;
+  margin: 30px;
+}
+
+.container-categoria {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  margin-bottom: 2cm;
+  padding: 10px;
+}

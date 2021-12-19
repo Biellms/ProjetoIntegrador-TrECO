@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
 import './DeletarProduto.css';
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import Produto from '../../../models/Produto';
 import { buscaId, deleteId } from '../../../service/Service';
 import { useSelector } from 'react-redux';
@@ -72,34 +71,36 @@ function DeletarProduto() {
 
     return (
         <>
-            <Box m={2}>
-                <Card variant="outlined" >
-                    <CardContent>
-                        <Box justifyContent="center">
-                            <Typography color="textSecondary" gutterBottom>
-                                Deseja deletar o produto ?
-                            </Typography>
-                            <Typography color="textSecondary" >
-                                {post?.nomeProduto}
-                            </Typography>
-                        </Box>
+            <Box display='flex' justifyContent='center'>
+                <Box margin={'18%'}>
+                    <Card variant="outlined" className='card-deletar'>
+                        <CardContent>
+                            <Box justifyContent="center">
+                                <Typography color="textSecondary" gutterBottom>
+                                    Deseja deletar o produto ?
+                                </Typography>
+                                <Typography color="textSecondary" >
+                                    {post?.nomeProduto}
+                                </Typography>
+                            </Box>
 
-                    </CardContent>
-                    <CardActions>
-                        <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-                            <Box mx={2}>
-                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                                    Sim
-                                </Button>
+                        </CardContent>
+                        <CardActions>
+                            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+                                <Box mx={2}>
+                                    <Button onClick={sim} variant="contained" className="botao-sim" size='large' color="primary">
+                                        Sim
+                                    </Button>
+                                </Box>
+                                <Box>
+                                    <Button onClick={nao} variant="contained" className='botao-nao' size='large' color="secondary">
+                                        Não
+                                    </Button>
+                                </Box>
                             </Box>
-                            <Box>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
-                                    Não
-                                </Button>
-                            </Box>
-                        </Box>
-                    </CardActions>
-                </Card>
+                        </CardActions>
+                    </Card>
+                </Box>
             </Box>
         </>
     );

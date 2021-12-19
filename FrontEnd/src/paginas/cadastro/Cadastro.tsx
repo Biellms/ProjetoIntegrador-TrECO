@@ -5,6 +5,9 @@ import './Cadastro.css';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../service/Service';
 import { toast } from 'react-toastify';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
@@ -99,11 +102,9 @@ function Cadastro() {
 
     return (
         <Box className='container-cadastro'>
-            <Paper elevation={15} className='paperStyle-cadastro'>
+            <Paper elevation={16} className='paperStyle-cadastro'>
                 <form onSubmit={onSubmit}>
-                    <Box>
-                        <img src="https://i.imgur.com/Hch416C.png" alt="logo" className='img-cadastro' />
-                    </Box>
+
                     <Box className='box-cadastro'>
                         <Typography variant='h5' align='center' className='loginText'>Cadastro</Typography>
                         <CssTextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome'
@@ -115,13 +116,15 @@ function Cadastro() {
                         <CssTextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarsenha' label='Confirmar Senha' variant='outlined'
                             type='password' name='confirmarsenha' margin='normal' fullWidth />
                     </Box>
+                    <Box className='botao-checar'>
+                        <Typography >
+                            <Checkbox {...label} defaultChecked color="success" />
+                            Ao clicar em cadastrar, você concorda com nossos
+                            Termos e Politica de Dados.
+                        </Typography>
+                    </Box>
                     <Box className='box-info'>
-                        <Box>
-                            <h1 className='font'>
-                                Ao clicar em cadastrar, você concorda com nossos
-                                Termos e Politica de Dados.
-                            </h1>
-                        </Box>
+
                         <Box marginTop={3} textAlign='center'>
                             <Button type='submit' className='button' variant="contained" fullWidth>
                                 Cadastrar

@@ -12,7 +12,7 @@
 }
 
 .paperStyle-cadastro {
-  padding: 22px;
+  padding: 33px;
   margin: 35vw;
   text-align: center;
   flex-direction: row;
@@ -28,7 +28,7 @@
 }
 
 .box-cadastro {
-  margin-top: -25px;
+  margin-top: 5px;
 }
 
 .button{
@@ -53,6 +53,13 @@
 
 .box-info {
   margin-top: 25px;
+}
+
+.botao-checar {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: end !important;
 }
 
 .loginText:hover {

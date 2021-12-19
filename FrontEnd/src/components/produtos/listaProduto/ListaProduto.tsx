@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Produto from '../../../models/Produto';
 import { Box, Card, CardActions, CardContent, Button, Typography, CardActionArea, CardMedia, Grid } from '@material-ui/core';
 import './ListaProduto.css';
-import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
 import { busca } from '../../../service/Service';
 import { useSelector } from 'react-redux';
@@ -76,25 +75,27 @@ function ListaProduto() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardContent>
+
+                <CardContent className='caixa-botoes'>
                   <Box display="flex" justifyContent="center" mb={1.5}>
 
                     <Link to={`/formularioProduto/${post.id}`} className="text-decorator-none" >
                       <Box mx={1}>
-                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                        <Button variant="contained" className="botao-atualizar" size='small' color="primary" >
                           atualizar
                         </Button>
                       </Box>
                     </Link>
                     <Link to={`/deletarProduto/${post.id}`} className="text-decorator-none">
                       <Box mx={1}>
-                        <Button variant="contained" size='small' color="secondary">
+                        <Button variant="contained" className="botao-deletar" size='small' color="secondary">
                           deletar
                         </Button>
                       </Box>
                     </Link>
                   </Box>
                 </CardContent>
+
               </Card>
             </Box >
           ))
