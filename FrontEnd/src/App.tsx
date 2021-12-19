@@ -16,6 +16,8 @@ import store from './store/store';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
 import ListaProduto from './components/produtos/listaProduto/ListaProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
+import Sobre from './paginas/sobre/Sobre';
+import Equipe from './paginas/equipe/Equipe';
 
 function App() {
   return (
@@ -42,6 +44,14 @@ function App() {
 
               <Route path="/home">
                 <Home />
+              </Route>
+
+              <Route path='/sobre'>
+                <Sobre />
+              </Route>
+
+              <Route path='/equipe'>
+                <Equipe />
               </Route>
 
               <Route path="/categorias">

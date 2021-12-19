@@ -37,7 +37,7 @@ function NavBar() {
       <Toolbar variant="dense" className='appbar'>
         <Link to='/home'>
           <Box className='pointer' >
-              <img src="https://i.imgur.com/Hch416C.png" alt="" width="" height="200px" />
+            <img src="https://i.imgur.com/Hch416C.png" alt="" width="" height="200px" />
           </Box>
         </Link>
         <Box display="flex" justifyContent="start">
@@ -48,11 +48,6 @@ function NavBar() {
               </Typography>
             </Box>
           </Link>
-          <Box mx={1} className='pointer'>
-            <Typography variant="h6" color="inherit" className='txtmenu'>
-              Sobre
-            </Typography>
-          </Box>
           <Link to='/produtos' className='text-decorator-none'>
             <Box mx={1} className='pointer'>
               <Typography variant="h6" color="inherit" className='txtmenu'>
@@ -67,11 +62,20 @@ function NavBar() {
               </Typography>
             </Box>
           </Link>
-          <Box mx={1} className='pointer'>
-            <Typography variant="h6" color="inherit" className='txtmenu'>
-              Equipe
-            </Typography>
-          </Box>
+          <Link to='/equipe' className='text-decorator-none'>
+            <Box mx={1} className='pointer'>
+              <Typography variant="h6" color="inherit" className='txtmenu'>
+                Equipe
+              </Typography>
+            </Box>
+          </Link>
+          <Link to='/sobre' className='text-decorator-none'>
+            <Box mx={1} className='pointer'>
+              <Typography variant="h6" color="inherit" className='txtmenu'>
+                Sobre
+              </Typography>
+            </Box>
+          </Link>
         </Box>
         <Link to='/login' className='text-decorator-none'>
           <Box mx={1} className='pointer' onClick={goLogout}>

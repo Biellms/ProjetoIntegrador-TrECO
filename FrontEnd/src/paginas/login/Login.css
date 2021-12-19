@@ -13,10 +13,8 @@
 
 .paperStyle-login{
   padding: 22px;
-  margin: auto;
+  margin: 35vw;
   text-align: center;
-  width: 20vw;
-  height: 52vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -44,7 +42,6 @@
 }
 
 .button{
-  height: 32px;
   color: white !important;
   font-weight: bold !important;
   background: linear-gradient(

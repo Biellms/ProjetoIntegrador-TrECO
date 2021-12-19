@@ -7,6 +7,7 @@ import { busca } from '../../../service/Service';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { Grid } from '@mui/material';
 
 function ListaCategoria() {
     
@@ -46,10 +47,11 @@ function ListaCategoria() {
 
     return (
         <>
+        <Grid className='container-categoria'>
             {
                 categorias.map(categoria => (
-                    <Box m={2} >
-                        <Card variant="outlined">
+                    <Box className='box-categoria'>
+                        <Card className="tamanho-categoria">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
                                     {categoria.nomeCategoria}
@@ -58,29 +60,32 @@ function ListaCategoria() {
                                     {categoria.descricao}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
+                            <CardContent>
                                 <Box display="flex" justifyContent="center" mb={1.5} >
 
                                     <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                                            <Button variant="contained" className="botao-atualizar" size='small' color="primary" >
                                                 atualizar
                                             </Button>
                                         </Box>
                                     </Link>
+
                                     <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
+                                            <Button variant="contained" className="botao-deletar" size='small' color="secondary">
                                                 deletar
                                             </Button>
                                         </Box>
                                     </Link>
+
                                 </Box>
-                            </CardActions>
+                            </CardContent>
                         </Card>
                     </Box>
                 ))
             }
+            </Grid>
         </>
     );
 }

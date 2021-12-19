@@ -13,7 +13,7 @@ function DeletarCategoria() {
     const { id } = useParams<{ id: string }>();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     const [categoria, setCategoria] = useState<Categoria>()
 
     useEffect(() => {
@@ -27,7 +27,7 @@ function DeletarCategoria() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined,
-              });
+            });
             history.push("/login")
         }
     }, [token])
@@ -62,7 +62,7 @@ function DeletarCategoria() {
             draggable: false,
             theme: 'colored',
             progress: undefined,
-          });
+        });
     }
 
     function nao() {
@@ -71,33 +71,35 @@ function DeletarCategoria() {
 
     return (
         <>
-            <Box m={2}>
-                <Card variant="outlined">
-                    <CardContent>
-                        <Box justifyContent="center">
-                            <Typography color="textSecondary" gutterBottom>
-                                Deseja deletar a categoria:
-                            </Typography>
-                            <Typography color="textSecondary">
-                                {categoria?.nomeCategoria}
-                            </Typography>
-                        </Box>
-                    </CardContent>
-                    <CardActions>
-                        <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-                            <Box mx={2}>
-                                <Button onClick={sim} variant="contained" size='large' color="primary">
-                                    Sim
-                                </Button>
+            <Box display='flex' justifyContent='center'>
+                <Box margin={'18%'}>
+                    <Card variant="outlined" className='card-deletar'>
+                        <CardContent>
+                            <Box justifyContent="center">
+                                <Typography color="textSecondary" gutterBottom>
+                                    Deseja deletar a categoria:
+                                </Typography>
+                                <Typography color="textSecondary">
+                                    {categoria?.nomeCategoria}
+                                </Typography>
                             </Box>
-                            <Box mx={2}>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
-                                    Não
-                                </Button>
+                        </CardContent>
+                        <CardActions>
+                            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+                                <Box mx={2}>
+                                    <Button onClick={sim} variant="contained" className="botao-sim" size='large' color="primary">
+                                        Sim
+                                    </Button>
+                                </Box>
+                                <Box mx={2}>
+                                    <Button onClick={nao} variant="contained" className='botao-nao' size='large' color="secondary">
+                                        Não
+                                    </Button>
+                                </Box>
                             </Box>
-                        </Box>
-                    </CardActions>
-                </Card>
+                        </CardActions>
+                    </Card>
+                </Box>
             </Box>
         </>
     );

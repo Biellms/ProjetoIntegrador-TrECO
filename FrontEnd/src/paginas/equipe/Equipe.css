@@ -1,0 +1,32 @@
+.container-equipe {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-gap: 10vh;
+  }
+  
+  .cartao {
+    width: 240px;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    border-radius: 10%;
+  }
+  
+  .nome {
+    text-align: center;
+  }
+  
+  .texto-card {
+    text-align: center;
+  }
+  
+  .botao-card {
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  
