@@ -163,7 +163,7 @@ function CadastroProduto() {
 
     return (
         <Box display='flex' justifyContent='center'>
-            <Box width={'37%'} margin={25} className='box-atualizar-produto'>
+            <Box width={'35%'} margin={25} className='box-atualizar-produto'>
                 <Card variant="outlined" className='card-atualizar'>
                     <CardContent>
                         <Container maxWidth="sm" >
