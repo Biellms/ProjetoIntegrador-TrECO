@@ -53,7 +53,7 @@ function ListaCategoria() {
                     <Box className='box-categoria'>
                         <Card className="tamanho-categoria">
                             <CardContent>
-                                <Typography color="textSecondary" gutterBottom>
+                                <Typography color="textSecondary" gutterBottom className='nome-categoria'>
                                     {categoria.nomeCategoria}
                                 </Typography>
                                 <Typography variant="h5" component="h2">

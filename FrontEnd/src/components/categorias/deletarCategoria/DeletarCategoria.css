@@ -1,7 +1,7 @@
 .card-deletar {
     background-color: #ffffff !important;
-    border-color: #629D27 !important;
-    border-width: 2px !important;
+    border-color: rgb(192, 189, 189) !important;
+    box-shadow: 6px 5px 15px #424242 !important;
     height: 4cm !important;
 }
 

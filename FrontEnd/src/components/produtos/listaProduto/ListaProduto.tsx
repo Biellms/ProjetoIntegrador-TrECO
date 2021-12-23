@@ -61,17 +61,19 @@ function ListaProduto() {
                     alt="Escova"
                   />
                   <CardContent>
-                    <Typography variant="body2" component="p">
-                      Nome: {post.nomeProduto}
+                    <Box className='box-descricao-produto' borderBottom={2}>
+                    <Typography variant="body2" component="p" className='titulo-card-produto'>
+                      {post.nomeProduto}
                     </Typography>
                     <Typography variant="body2" component="p">
-                      Descrição: {post.descricao}
+                      {post.descricao}
                     </Typography>
-                    <Typography variant="body2" component="p">
-                      Preço: R${post.preco}
+                    <Typography variant="body2" component="p" className='texto-preco-produto'>
+                      R${post.preco}
                     </Typography>
-                    <Typography variant="body2" component="p">
-                      Categoria: {post.categoria?.descricao}
+                    </Box>
+                    <Typography variant="body2" component="p" className='texto-categoria-produto'>
+                      Categoria: {post.categoria?.nomeCategoria}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
