@@ -1,7 +1,5 @@
-Em desenvolvimento... 🚧🏗 
-
 <div align = "center">
-  <img width="250px" src="https://i.imgur.com/LEVUP0p.png" title="source: imgur.com"/>
+  <img width="650px" src="https://i.imgur.com/DDvQX9j.png" title="source: imgur.com"/>
   <hr>
   <h3>
   <p><b>Projeto Integrador Generation Brasil - TrECO</b></p>
@@ -16,6 +14,8 @@ TrECO (Trabalho responsavel Ecológico) é um E-Commerce. No objetivo de vender 
 Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os próprios serviços dentro da mesma, em prol do giro econômico, como vendas de produtos artesanais, coleta seletiva, e até venda de serviços em um futuro. Para tornar os assentamentos humanos inclusivos, seguros, resiliêntes e sustentáveis.
 
 <h3><b><a href="https://brasil.un.org/pt-br/sdgs/11" target="_blank"><p target="_blank">• ODS Utilizada - Cidades e Comunidades Sustentáveis</a></b></h3>
+
+<h3><b><a href="https://projetotreco.vercel.app" target="_blank"><p target="_blank">• Deploy</a></b></h3>
 
 <hr>
 
@@ -51,8 +51,3 @@ Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os
   <p><h3> • Diagrama Entidade Relacionamento
   <br><br>
   <img width="1250px" src="https://i.imgur.com/9LQ8FQX.jpg"/>
-  <hr>
-  <p><h3> • Dicionário de Dados
-  <br><br>
-  <img width="1250px" src="https://i.imgur.com/Ytj5lj0.jpg"/>
-</div>
