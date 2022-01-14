@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 public class CartShop {
 
@@ -33,7 +34,7 @@ public class CartShop {
         for (int pos = 0; pos < getItens().size() & posicaoEncontrada < 0; pos++) {
             Item itemTemporario = listaItens.get(pos);
 
-            if (itemTemporario.getId().equals(id)) {
+            if (Objects.equals(itemTemporario.getId(), id)) {
                 posicaoEncontrada = pos;
             }
         }
@@ -74,7 +75,7 @@ public class CartShop {
         for (int pos = 0; pos < getItens().size() & posicaoEncontrada < 0; pos++) {
             Item itemTemp = listaItens.get(pos);
 
-            if (itemTemp.getId().equals(id)) {
+            if (Objects.equals(itemTemp.getId(), id)) {
                 posicaoEncontrada = pos;
             }
         }
@@ -126,5 +127,10 @@ public class CartShop {
             listaItens = new ArrayList<>();
         }
         return listaItens;
+    }
+
+    public boolean containsKey(String usuario) { return Boolean.parseBoolean(usuario); }
+
+    public void put(String usuario, CartShop cartShop) {
     }
 }

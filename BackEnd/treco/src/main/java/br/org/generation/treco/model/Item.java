@@ -17,10 +17,7 @@ public class Item {
 
     }
 
-    public Produto getId() {
-        return id;
-
-    }
+    public long getId() { return id; }
 
     public BigDecimal getPreco() {
         return preco;
