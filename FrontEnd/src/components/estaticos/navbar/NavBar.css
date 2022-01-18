@@ -1,0 +1,76 @@
+.text-decorator-none {
+  text-decoration: none;
+  
+}
+
+.appbar {
+  background-color: #dce8dc;
+ 
+}
+
+.pointer {
+  cursor: pointer;
+  color: black;
+  margin-top: 5px;
+  display:flex;
+  justify-content: flex-end;
+
+  }
+
+.txtmenu {
+  font-family: Segoe UI !important;
+  color: black !important;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+.txtmenu:hover {
+  color: rgb(105, 104, 104) !important;
+  transition: 0.3s ease-out !important;
+}
+
+a {
+  margin-right: 10px;
+}
+
+.pointerimage {
+  cursor: pointer;
+  color: black;
+  margin-right: 250px;
+  margin-top: -70px;
+}
+
+.sair {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+margin-left: 60px;
+}
+.menu1{
+  margin-top: 35px;
+}
+
+.teste{
+  font-family: Segoe UI !important;
+  color: black !important;
+  text-decoration: none !important;
+  list-style: none !important;
+  font-size: 20px !important;
+  text-transform: initial;
+  font-weight: 500;
+}
+
+.box-cadastro{
+  margin: 0;
+}
+
+.cad-button{
+  margin: -4px !important;
+}
+
+.pointer {
+  cursor: pointer;
+  color: black;
+  margin-top: 4px;
+  
+}
