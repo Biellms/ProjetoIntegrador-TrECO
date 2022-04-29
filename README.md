@@ -1,5 +1,5 @@
 <div align = "center">
-  <img width="650px" src="https://i.imgur.com/DDvQX9j.png" title="source: imgur.com"/>
+  <img width="1000px" src="https://i.imgur.com/DDvQX9j.png" title="source: imgur.com"/>
   <hr>
   <h3>
   <p><b>Projeto Integrador Generation Brasil - TrECO</b></p>
