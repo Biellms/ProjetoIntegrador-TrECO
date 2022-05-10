@@ -28,14 +28,15 @@ Utilizamos do E-Commerce, para incentivar as pessoas da comunidade utilizarem os
 ### **Linguagens e Ferramentas Utilizadas** 🛠
 
 - <img align="center" alt="Biell-Java" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"/> Java
-- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/> React
-- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/> TypeScript
-- <img align="center" alt="Biell-C" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/> CSS3
+- <img align="center" alt="Biell-React" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/> React
+- <img align="center" alt="Biell-TypeScript" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/> TypeScript
+- <img align="center" alt="Biell-CSS3" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/> CSS3
 - <img align="center" alt="Biell-Spring" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring
 - <img align="center" alt="Biell-MySQL" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"/> MySQL 
 - <img align="center" alt="Biell-Vscode" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Visual Studio Code
-
 - <img align="center" alt="Biell-Git" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git
+  
+- <img align="center" alt="Biell-Trello" height="25" width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"/> Trello
 
 #
 
